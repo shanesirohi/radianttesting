@@ -61,6 +61,9 @@ export default function LoginCard() {
 					<Heading fontSize={"4xl"} textAlign={"center"}>
 						Login
 					</Heading>
+					<Heading fontSize={"2xl"} textAlign={"center"}>
+						We are currently in testing and nothing is final right now, for more updates check our instagram page
+					</Heading>
 				</Stack>
 				<Box
 					rounded={"lg"}
