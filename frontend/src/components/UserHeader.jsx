@@ -119,15 +119,15 @@ const UserHeader = ({ user }) => {
 
       {/* Display likes listening to, relationship status, and school */}
       <VStack w="full">
-        {user.favoriteArtist && user.favoriteGenre && (
+        {user.interest && user.specificInterest && (
           <Text>
-            Likes listening to{" "}
+            Hobby: {" "}
             <Text as="span" fontWeight="bold">
-              {user.favoriteArtist}
+              {user.interest}
             </Text>{" "}
             and{" "}
             <Text as="span" fontWeight="bold">
-              {user.favoriteGenre}
+              {user.specificInterest}
             </Text>
           </Text>
         )}

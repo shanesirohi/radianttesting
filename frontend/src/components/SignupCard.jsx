@@ -31,8 +31,8 @@ import {
 	  email: "",
 	  password: "",
 	  school: "",
-	  favoriteGenre: "", // Added favorite genre
-	  favoriteArtist: "", // Added favorite artist
+	  interest: "", // Changed from favoriteGenre
+	  specificInterest: "", // Changed from favoriteArtist
 	});
 	const [selectedSchool, setSelectedSchool] = useState("");
 	const showToast = useShowToast();
@@ -149,26 +149,30 @@ import {
 				  <option value="DPS">DPS</option>
 				</Select>
 			  </FormControl>
-			  <FormControl>
-				<FormLabel>Favorite Genre</FormLabel>
-				<Input
-				placeholder="For eg. Pop, HipHop, Rap, Classic"
-				  type="text"
+			  <FormControl isRequired>
+				<FormLabel>Interest</FormLabel>
+				<Select
+				  placeholder="Select interest"
 				  onChange={(e) =>
-					setInputs({ ...inputs, favoriteGenre: e.target.value })
+					setInputs({ ...inputs, interest: e.target.value })
 				  }
-				  value={inputs.favoriteGenre}
-				/>
+				  value={inputs.interest}
+				>
+				  <option value="Pop">Pop</option>
+				  <option value="HipHop">HipHop</option>
+				  <option value="Rap">Rap</option>
+				  <option value="Classic">Classic</option>
+				</Select>
 			  </FormControl>
 			  <FormControl>
-				<FormLabel>Favorite Artist</FormLabel>
+				<FormLabel>Specific Interest</FormLabel>
 				<Input
-				placeholder="For eg. Kanye West, Taylor Swift, Travis Scott"
+				  placeholder="Enter specific interest"
 				  type="text"
 				  onChange={(e) =>
-					setInputs({ ...inputs, favoriteArtist: e.target.value })
+					setInputs({ ...inputs, specificInterest: e.target.value })
 				  }
-				  value={inputs.favoriteArtist}
+				  value={inputs.specificInterest}
 				/>
 			  </FormControl>
 			  <Stack spacing={10} pt={2}>

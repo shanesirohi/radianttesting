@@ -46,11 +46,11 @@ const userSchema = mongoose.Schema(
       enum: ["SAJS", "AMITY", "DPS"], // Enumerate allowed options
       required: true,
     },
-    favoriteGenre: {
+    interest: {
       type: String,
-      default: "", // Default genre if needed
+      default: "", // Default interest if needed
     },
-    favoriteArtist: {
+    specificInterest: {
       type: String,
       default: "",
     },
@@ -76,6 +76,7 @@ const userSchema = mongoose.Schema(
     timestamps: true,
   }
 );
+
 
 const User = mongoose.model("User", userSchema);
 
