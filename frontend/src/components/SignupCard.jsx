@@ -161,16 +161,18 @@ import {
 				  }
 				  value={inputs.interest}
 				>
-				  <option value="Pop">Pop</option>
-				  <option value="HipHop">HipHop</option>
-				  <option value="Rap">Rap</option>
-				  <option value="Classic">Classic</option>
+				  <option value="Music">Music</option>
+				  <option value="Sports">Sports</option>
+				  <option value="Gaming">Gaming</option>
+				  <option value="Tech">Tech</option>
+				  <option value="Writing">Writing</option>
+				  <option value="Art">Art</option>
 				</Select>
 			  </FormControl>
 			  <FormControl>
-				<FormLabel>Specific Interest</FormLabel>
+				<FormLabel>What do you like about your interest?</FormLabel>
 				<Input
-				  placeholder="Enter specific interest"
+				  placeholder="For eg: Cricket(Sports), Singing(Music)"
 				  type="text"
 				  onChange={(e) =>
 					setInputs({ ...inputs, specificInterest: e.target.value })
