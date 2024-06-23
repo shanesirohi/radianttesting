@@ -1,8 +1,0 @@
-Login
-Signup
-Profile
-Profile(Sharing Profiles)
-Messaging features
-Settings
-Homepage
-Profile Editing
